@@ -1,0 +1,132 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #6a0dad; /* Purple Background for the whole page */
+    color: purple(255, 255, 255); /* Ensures the text is visible on the purple background */
+}
+
+/* Header */
+header h1 {
+    font-size: 3rem;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* Section Padding */
+section {
+    padding: 40px 0;
+}
+
+/* Portfolio Section */
+.card {
+    margin-bottom: 30px;
+}
+
+.card img {
+    height: 200px;
+    object-fit: cover;
+}
+
+/* Contact Section Styling */
+#contact {
+    background-color: #6a0dad; /* Purple Background */
+    color: white;
+    padding: 60px 0;
+}
+
+#contact h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+#contact .form-label {
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+#contact .form-control {
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    padding: 15px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+}
+
+#contact .form-control:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 10px rgba(0, 123, 255, 0.5);
+}
+
+#contact textarea.form-control {
+    height: 150px;
+    resize: vertical;
+}
+
+#contact .btn {
+    border-radius: 30px;
+    padding: 15px 30px;
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+#contact .btn-primary {
+    background-color: #007bff;
+    border: none;
+}
+
+#contact .btn-primary:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+}
+
+#contact form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    #contact h2 {
+        font-size: 2rem;
+    }
+
+    #contact .form-label {
+        font-size: 1rem;
+    }
+
+    #contact .btn {
+        font-size: 1rem;
+    }
+
+    /* Adjust for mobile screens */
+    .card {
+        margin-bottom: 15px;
+    }
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+/* Additional Styles for Spacing and Alignment */
+.card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card img {
+    border-radius: 8px;
+}
